@@ -1,2 +1,2 @@
-# personal-site
-heatherdannyelle.com
+# heatherdannyelle.com
+ personal website
