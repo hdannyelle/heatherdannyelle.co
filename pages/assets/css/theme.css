@@ -7633,6 +7633,13 @@ button.bg-dark:focus {
   border: 0;
 }
 
+@media screen and (max-width: 650px) {
+  #bg-video {
+      display: none;
+  }
+}
+
+
 .embed-responsive-21by9::before {
   padding-top: 42.85714%;
 }
