@@ -145,15 +145,16 @@
             </div>
             <div class="col-lg-6 bg-white py-6 py-lg-8">
               <div class="row h-100 align-items-center justify-content-center text-center">
-                <div class="col-lg-10 col-xl-8" data-zanim-timeline='{"delay":0.4}' data-zanim-trigger="scroll">
-                  <img src="assets/img/favicons/logo_16.png" alt="" width="100" data-zanim-xs='{"delay":0.1,"animation":"zoom-in"}' />
-                  <div class="overflow-hidden">
-                    <h2 class="my-4" data-countdown="2020/12/31" data-countdown-fallback="Getting ready" data-zanim-xs='{"delay":0.2}'></h2>
-                  </div>
-                  <div class="overflow-hidden">
-                    <p class="lead" data-zanim-xs='{"delay":0.3}'>I've haven't finished building this part of the site yet.
-                      <br class="d-none d-sm-block d-lg-none" />Check back soon!</p>
-                  </div>
+                <div class="col-lg-10 col-xl-8" data-zanim-lg='{"animation":"slide-left","delay":0.6}' data-zanim-trigger="scroll">
+                  <h1 class="text-underline d-inline-block mb-4 mb-lg-2">contact</h1>
+                  <form class="zform mt-4" method="POST">
+                    <input class="form-control border-300" type="hidden" name="to" value="hhdthompson@gmail.com">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Your Name" aria-label="Text input with dropdown button">
+                    <input class="form-control border-300 mt-3" type="text" placeholder="Email" aria-label="Text input with dropdown button">
+                    <textarea class="form-control border-300 mt-3" rows="11" placeholder="Your Message" required></textarea>
+                    <button class="btn btn-block btn-dark mt-4" type="submit">Send<span class="fa fa-paper-plane ml-1"></span></button>
+                    <div class="zform-feedback mt-4"></div>
+                  </form>
                 </div>
               </div>
             </div>
