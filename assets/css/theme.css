@@ -462,8 +462,9 @@ mark,
 
 .blockquote {
   margin-bottom: 1rem;
-  font-size: 1.333rem;
+  font-size: 1rem; 
 }
+/* used to be 1.333 */
 
 .blockquote-footer {
   display: block;
@@ -2164,6 +2165,12 @@ pre code {
   }
   .table-responsive-sm > .table-bordered {
     border: 0;
+  }
+}
+@media (max-width: 370px) {
+  .hero img {
+    left: unset !important;
+    right: 0;
   }
 }
 
@@ -12667,6 +12674,48 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /*-----------------------------------------------
+|   Adjusting Background Images
+-----------------------------------------------*/
+@media (min-width: 1200px) {
+  /* styles for wide screens */
+  html {
+    background: url('assets/img/headers/hero_1.jpg')
+  }
+}
+
+@media (max-width: 320px) {
+  /* styles for narrow screens */
+  html {
+    background: url('assets/img/headers/hero_mobile_1.jpg');
+  }
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/*-----------------------------------------------
 |   Sparrow Styles
 -----------------------------------------------*/
 /*-----------------------------------------------
@@ -14391,6 +14440,20 @@ input.zinput-file[type='file'] {
   font-weight: 800;
   background-color: white;
   font-size: 3.157rem;
+}
+
+.process-item .resume-year{
+  position: absolute;
+  color: #e1e1e1;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-127%, -21%);
+  -ms-transform: translate(-127%, -21%);
+  transform: translate(-127%, -21%);
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 800;
+  background-color: white;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 576px) {
